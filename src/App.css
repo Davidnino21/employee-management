@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #e7e9e9;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+header a {
+display: flex;
+align-items: center;
+text-decoration: none;
+color: black;
+font-size: 19px;
+}
+
+.home-icon {
+    font-size: 30px;
+}
+
+header a:hover{
+   color: #79b2be;
+   border-bottom: 1px solid #79b2be;
+}

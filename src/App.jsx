@@ -1,12 +1,12 @@
 import { Outlet } from 'react-router'
 import './App.css'
-
+import Header from './components/Header'
 
 function App() {
 
   return (
     <>
-    <h1>header</h1>
+    <Header/>
     <Outlet/>
     </>
   )
