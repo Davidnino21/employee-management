@@ -1,10 +1,9 @@
 import { IoChatboxEllipsesOutline } from "react-icons/io5";
 import { MdOutlinePhonelinkRing } from "react-icons/md";
 import { MdOutlineMailLock } from "react-icons/md";
-import { FaClipboardList } from "react-icons/fa"; 
+import { FaClipboardList } from "react-icons/fa";
 
-function UserCard({employee}) {
-  console.log(employee)
+function UserCard({ employee }) {
   return (
     <div className="user-card">
       <div className="card-header">

@@ -72,7 +72,7 @@ header a:hover {
   font-size: 15px;
 }
 
-.btn-actions button:hover{
+.btn-actions button:hover {
   background-color: #79b2be;
 }
 
@@ -119,6 +119,40 @@ header a:hover {
   display: flex;
   gap: 5px;
   align-items: center;
+}
+
+.newUser-page {
+  min-height: 92vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-user {
+  height: fit-content;
+  width: 600px;
+}
+
+.form-header {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  align-items: center;
+}
+
+.form-header h2 {
+  flex-grow: 2;
+  text-align: center;
+}
+
+.new-user form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+form input {
+  font-size: 18px;
 }
 
 @media (max-width: 1400px) {

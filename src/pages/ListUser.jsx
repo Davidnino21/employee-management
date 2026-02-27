@@ -16,7 +16,7 @@ function ListUser() {
       <Search />
       <div className="user-container">
         {employees.map((emp) => (
-          <UserCard employee={emp}/>
+          <UserCard key={emp.id} employee={emp} />
         ))}
       </div>
     </>

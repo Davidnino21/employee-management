@@ -1,7 +1,11 @@
+import NewUser from "../components/NewUser";
+
 function CreateUser() {
-    return(
-       <h1>Create User</h1>
-    )
+  return (
+    <div className="newUser-page">
+      <NewUser />
+    </div>
+  );
 }
 
-export default CreateUser
+export default CreateUser;

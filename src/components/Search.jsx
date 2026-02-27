@@ -1,5 +1,6 @@
 import { CiFilter } from "react-icons/ci";
 import { IoIosPersonAdd } from "react-icons/io";
+import { Link } from "react-router";
 
 function Search() {
   return (
@@ -12,10 +13,10 @@ function Search() {
           <CiFilter />
           filter
         </button>
-        <button>
+        <Link to="/create">
           <IoIosPersonAdd />
           Add Employee
-        </button>
+        </Link>
       </div>
     </div>
   );
