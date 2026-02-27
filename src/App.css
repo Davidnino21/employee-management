@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #8d8d8d2e;
 }
 
 header {
@@ -18,6 +18,8 @@ header {
 
 header h1 {
   font-size: 40px;
+  font-style: oblique;
+  font-weight: 400;
 }
 
 header a {
@@ -66,20 +68,63 @@ header a:hover {
   padding: 10px;
 }
 
+.btn-actions button {
+  font-size: 15px;
+}
+
+.btn-actions button:hover{
+  background-color: #79b2be;
+}
+
 .user-container {
-  /* display: flex;
-  justify-content: center;
-  flex-wrap: wrap; */
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(6, 250px);
+  gap: 15px;
   padding: 10px;
+  justify-content: center;
 }
 
 .user-card {
-  background-color: blue;
+  background-color: #ffffff;
+  box-shadow: 5px 8px #b7b9b9;
   height: 300px;
-  /* width: 300px; */
+  border-radius: 12px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.card-header img {
+  border-radius: 50%;
+}
+
+.card-header span {
+  font-size: 22px;
+}
+
+.card-info {
+  padding: 5px;
+}
+
+.card-info h3 {
+  color: #4e90e1;
+}
+
+.card-info p {
+  margin-top: 7px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+@media (max-width: 1400px) {
+  .user-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 @media (max-width: 1024px) {

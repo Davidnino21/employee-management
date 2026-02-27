@@ -1,0 +1,52 @@
+{
+  "employees": [
+    {
+      "id": "1",
+      "title": "Web Designer",
+      "avatar": "https://i.pravatar.cc/70",
+      "name": "Bob Jones",
+      "phone": "(200)-200-2000",
+      "email": "test@yahoo.com"
+    },
+    {
+      "id": "2",
+      "title": "Frontend Developer",
+      "avatar": "https://i.pravatar.cc/70?img=2",
+      "name": "Sarah Miller",
+      "phone": "(201)-201-2010",
+      "email": "sarah.miller@yahoo.com"
+    },
+    {
+      "id": "3",
+      "title": "Backend Developer",
+      "avatar": "https://i.pravatar.cc/70?img=3",
+      "name": "James Carter",
+      "phone": "(202)-202-2020",
+      "email": "james.carter@yahoo.com"
+    },
+    {
+      "id": "4",
+      "title": "UI/UX Designer",
+      "avatar": "https://i.pravatar.cc/70?img=4",
+      "name": "Emily Davis",
+      "phone": "(203)-203-2030",
+      "email": "emily.davis@yahoo.com"
+    },
+    {
+      "id": "5",
+      "title": "Project Manager",
+      "avatar": "https://i.pravatar.cc/70?img=5",
+      "name": "Michael Brown",
+      "phone": "(204)-204-2040",
+      "email": "michael.brown@yahoo.com"
+    },
+    {
+      "id": "6",
+      "title": "QA Engineer",
+      "avatar": "https://i.pravatar.cc/70?img=6",
+      "name": "Olivia Wilson",
+      "phone": "(205)-205-2050",
+      "email": "olivia.wilson@yahoo.com"
+    }
+  ]
+}

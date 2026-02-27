@@ -1,17 +1,23 @@
+import { useEffect, useState } from "react";
 import Search from "../components/Search";
 import UserCard from "../components/UserCard";
 
 function ListUser() {
+  const [employees, setEmployees] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:3000/employees")
+      .then((res) => res.json())
+      .then((data) => setEmployees(data));
+  }, []);
+
   return (
     <>
       <Search />
       <div className="user-container">
-        <UserCard />
-        <UserCard />
-        <UserCard />
-        <UserCard />
-        <UserCard />
-        <UserCard />
+        {employees.map((emp) => (
+          <UserCard employee={emp}/>
+        ))}
       </div>
     </>
   );
