@@ -6,6 +6,7 @@
 
 body {
   background-color: #8d8d8d2e;
+  font-family: ui-monospace;
 }
 
 header {
@@ -18,7 +19,6 @@ header {
 
 header h1 {
   font-size: 40px;
-  font-style: oblique;
   font-weight: 400;
 }
 
@@ -122,7 +122,7 @@ header a:hover {
 }
 
 .newUser-page {
-  min-height: 92vh;
+  min-height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,6 +143,7 @@ header a:hover {
 .form-header h2 {
   flex-grow: 2;
   text-align: center;
+  text-decoration: underline;
 }
 
 .new-user form {
@@ -152,7 +153,24 @@ header a:hover {
 }
 
 form input {
-  font-size: 18px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  padding: 4px;
+}
+
+.save-btn {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.save-btn button {
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #79b2be;
 }
 
 @media (max-width: 1400px) {

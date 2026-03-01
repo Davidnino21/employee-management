@@ -19,7 +19,7 @@ function NewUser() {
         <label htmlFor="">Job Title:</label>
         <input type="text" name="" id="" />
       </form>
-      <div>
+      <div className="save-btn">
         <button>Save</button>
       </div>
     </div>
