@@ -89,6 +89,7 @@ header a:hover {
   box-shadow: 5px 8px #b7b9b9;
   height: 300px;
   border-radius: 12px;
+  position: relative;
 }
 
 .card-header {
@@ -100,6 +101,8 @@ header a:hover {
 
 .card-header img {
   border-radius: 50%;
+  width: 70px;
+  height: 70px;
 }
 
 .card-header span {
@@ -119,6 +122,15 @@ header a:hover {
   display: flex;
   gap: 5px;
   align-items: center;
+}
+
+.user-card-menu {
+  position: absolute;
+  width: 100px;
+  height: 80px;
+  background-color: aquamarine;
+  top: 50px;
+  right: 5px;
 }
 
 .newUser-page {
@@ -171,6 +183,12 @@ form input {
   border: none;
   border-radius: 10px;
   background-color: #79b2be;
+  cursor: pointer;
+}
+
+.save-btn button:hover {
+  background-color: #4e90e1;
+  color: white;
 }
 
 @media (max-width: 1400px) {

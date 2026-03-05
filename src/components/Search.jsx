@@ -6,17 +6,13 @@ function Search() {
   return (
     <div className="search">
       <form action="">
-        <input type="text" name="" id="" placeholder="search user"/>
+        <input type="text" name="" id="" placeholder="search user" />
       </form>
       <div className="btn-actions">
         <button>
           <CiFilter />
           filter
         </button>
-        <Link to="/create">
-          <IoIosPersonAdd />
-          Add Employee
-        </Link>
       </div>
     </div>
   );
