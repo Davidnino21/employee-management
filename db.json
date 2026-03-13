@@ -1,28 +1,40 @@
 {
   "employees": [
-    {
+ {
       "id": "1",
-      "title": "Web Designer",
-      "avatar": "https://i.pravatar.cc/70",
-      "name": "Bob Jones",
-      "phone": "(200)-200-2000",
-      "email": "test@yahoo.com"
-    },
-    {
-      "id": "2",
       "title": "Frontend Developer",
       "avatar": "https://i.pravatar.cc/70?img=2",
       "name": "Sarah Miller",
-      "phone": "(201)-201-2010",
-      "email": "sarah.miller@yahoo.com"
+      "phone": "(209)-555-3124",
+      "email": "sarah.miller@email.com",
+      "address": "San Jose, CA",
+      "hire": "05/21/2024",
+      "education": "Software Engineering",
+      "note": "React specialist"
+    },
+    {
+      "id": "2",
+      "title": "UI/UX Designer",
+      "avatar": "https://i.pravatar.cc/70?img=3",
+      "name": "Kevin Lee",
+      "phone": "(415)-555-8742",
+      "email": "kevin.lee@email.com",
+      "address": "San Francisco, CA",
+      "hire": "11/10/2023",
+      "education": "Graphic Design",
+      "note": "Focus on mobile interfaces"
     },
     {
       "id": "3",
       "title": "Backend Developer",
-      "avatar": "https://i.pravatar.cc/70?img=3",
-      "name": "James Carter",
-      "phone": "(202)-202-2020",
-      "email": "james.carter@yahoo.com"
+      "avatar": "https://i.pravatar.cc/70?img=4",
+      "name": "Maria Gonzalez",
+      "phone": "(310)-555-6651",
+      "email": "maria.g@email.com",
+      "address": "Los Angeles, CA",
+      "hire": "08/02/2022",
+      "education": "Information Technology",
+      "note": "Node.js and database optimization"
     },
     {
       "id": "4",

@@ -1,0 +1,33 @@
+.page-container {
+  display: flex;
+  justify-content: center;
+  min-height: 80vh;
+  align-items: center;
+}
+
+.details-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 20px;
+  border: 1px solid #e7d4d4;
+  padding: 20px;
+}
+
+.header-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.details-container img {
+  width: 30%;
+  border-radius: 50%;
+}
+
+.details-container h2 {
+  text-decoration: underline;
+  padding: 5px;
+}

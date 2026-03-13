@@ -3,6 +3,7 @@ import { MdOutlinePhonelinkRing } from "react-icons/md";
 import { MdOutlineMailLock } from "react-icons/md";
 import { FaClipboardList } from "react-icons/fa";
 import { useState } from "react";
+import { Link } from "react-router";
 
 function UserCard({ employee }) {
   const [showMenu, setShowMenu] = useState(false);
@@ -33,11 +34,15 @@ function UserCard({ employee }) {
       </div>
       <div
         className="user-card-menu"
-        style={{ display: showMenu ? "block" : "none" }}
+        style={{ display: showMenu ? "flex" : "none" }}
       >
-        <button>Details</button>
-        <button>Edit</button>
-        <button>Delete</button>
+        <Link className="option-btn" to={`/${employee.id}`}>
+          Details
+        </Link>
+        <Link className="option-btn" to={`/edit/${employee.id}`}>
+          Edit
+        </Link>
+        <button className="option-btn">Delete</button>
       </div>
     </div>
   );

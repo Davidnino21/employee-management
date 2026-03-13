@@ -126,11 +126,27 @@ header a:hover {
 
 .user-card-menu {
   position: absolute;
-  width: 100px;
-  height: 80px;
-  background-color: aquamarine;
-  top: 50px;
+  top: 53px;
   right: 5px;
+  background-color: #f1f1f1;
+  flex-direction: column;
+  width: 35%;
+}
+
+.option-btn {
+  border: none;
+  display: flex;
+  background: none;
+  padding: 3px;
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+.option-btn:hover {
+  background-color: #4e90e1;
 }
 
 .newUser-page {
