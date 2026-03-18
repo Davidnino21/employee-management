@@ -5,7 +5,7 @@ import { FaClipboardList } from "react-icons/fa";
 import { useState } from "react";
 import { Link } from "react-router";
 
-function UserCard({ employee }) {
+function UserCard({ employee, toggle }) {
   const [showMenu, setShowMenu] = useState(false);
 
   function handleToggle() {
@@ -42,7 +42,9 @@ function UserCard({ employee }) {
         <Link className="option-btn" to={`/edit/${employee.id}`}>
           Edit
         </Link>
-        <button className="option-btn">Delete</button>
+        <button className="option-btn" onClick={() => toggle(employee.name)}>
+          Delete
+        </button>
       </div>
     </div>
   );

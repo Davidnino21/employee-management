@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { SiMinutemailer } from "react-icons/si";
-import "./details.css"
+import "./details.css";
 
 function UserDetail() {
   const [employee, setEmployee] = useState(null);
@@ -23,28 +23,25 @@ function UserDetail() {
           <img src={employee.avatar} alt="" />
           <h2>{employee.name}</h2>
         </div>
-        <div>
-          <h3>Contact Information</h3>
-          <p>{employee.phone}</p>
-          <p>{employee.address}</p>
+        <div className="headings">
+          <h3>Contact Information:</h3>
+          <p>Phone Number: {employee.phone}</p>
+          <p>Work Location: {employee.address}</p>
+          <p>
+            <SiMinutemailer /> <span>Email: {employee.email}</span>
+          </p>
         </div>
-        <div>
-          <h3>Job Details</h3>
-          <p>{employee.title}</p>
-          <p>{employee.hire}</p>
+        <div className="headings">
+          <h3>Job Details:</h3>
+          <p>Business Title: {employee.title}</p>
+          <p>Hire Date: {employee.hire}</p>
         </div>
-        <div>
-          <h3>Education</h3>
+      </div>
+        <div className="education">
+          <h3>Education:</h3>
           <p>{employee.education}</p>
           <p>{employee.note}</p>
         </div>
-        <div className="details-email">
-          <h3>Contact Information</h3>
-          <p>
-            <SiMinutemailer /> <span>{employee.email}</span>
-          </p>
-        </div>
-      </div>
     </div>
   );
 }
