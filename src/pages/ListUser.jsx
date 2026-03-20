@@ -6,11 +6,12 @@ import DeleteModal from "../components/DeleteModal";
 function ListUser() {
   const [employees, setEmployees] = useState([]);
   const [showDelete, setShowDelete] = useState(false)
-  const [selectedName, setSelectedName] = useState("")
+  const [selectedUser, setSelectedUser] = useState({})
 
-  function toggleDelete(name) {
+  function toggleDelete(user) {
+    
     setShowDelete(!showDelete)
-    setSelectedName(name)
+    setSelectedUser(user)
   }
 
   useEffect(() => {
@@ -18,6 +19,19 @@ function ListUser() {
       .then((res) => res.json())
       .then((data) => setEmployees(data));
   }, []);
+
+  async function deleteUserById(id) {
+    try {
+      const res = fetch(`http://localhost:3000/employees/${id}`,{
+        method: "delete"
+      })
+      const filtered = employees.filter((emp) => emp.id != id)
+      setEmployees(filtered)
+      setShowDelete(false)
+    } catch (error) {
+      
+    }
+  } 
 
   return (
     <>
@@ -27,7 +41,7 @@ function ListUser() {
           <UserCard key={emp.id} employee={emp} toggle={toggleDelete}/>
         ))}
       </div>
-      <DeleteModal show={showDelete} cancel={toggleDelete} selectedName={selectedName}/>
+      <DeleteModal show={showDelete} cancel={toggleDelete} selectedUser={selectedUser} deleteEmployee={deleteUserById}/>
     </>
   );
 }

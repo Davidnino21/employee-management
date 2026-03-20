@@ -1,29 +1,5 @@
 {
   "employees": [
- {
-      "id": "1",
-      "title": "Frontend Developer",
-      "avatar": "https://i.pravatar.cc/70?img=2",
-      "name": "Sarah Miller",
-      "phone": "(209)-555-3124",
-      "email": "sarah.miller@email.com",
-      "address": "San Jose, CA",
-      "hire": "05/21/2024",
-      "education": "Software Engineering",
-      "note": "React specialist"
-    },
-    {
-      "id": "2",
-      "title": "UI/UX Designer",
-      "avatar": "https://i.pravatar.cc/70?img=3",
-      "name": "Kevin Lee",
-      "phone": "(415)-555-8742",
-      "email": "kevin.lee@email.com",
-      "address": "San Francisco, CA",
-      "hire": "11/10/2023",
-      "education": "Graphic Design",
-      "note": "Focus on mobile interfaces"
-    },
     {
       "id": "3",
       "title": "Backend Developer",

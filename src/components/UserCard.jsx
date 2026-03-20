@@ -42,7 +42,7 @@ function UserCard({ employee, toggle }) {
         <Link className="option-btn" to={`/edit/${employee.id}`}>
           Edit
         </Link>
-        <button className="option-btn" onClick={() => toggle(employee.name)}>
+        <button className="option-btn" onClick={() => toggle(employee)}>
           Delete
         </button>
       </div>
