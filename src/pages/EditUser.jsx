@@ -1,4 +1,5 @@
 import UpdateUser from "../components/UpdateUser"
+import "./edit.css"
 
 function EditUser() {
     return (

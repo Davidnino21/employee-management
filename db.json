@@ -1,14 +1,6 @@
 {
   "employees": [
     {
-      "id": "6",
-      "title": "QA Engineer",
-      "avatar": "https://i.pravatar.cc/70?img=6",
-      "name": "Olivia Wilson",
-      "phone": "(205)-205-2050",
-      "email": "olivia.wilson@yahoo.com"
-    },
-    {
       "id": "e887",
       "avatar": "https://i.pravatar.cc/70?img=7",
       "name": "Gilbert Great",
@@ -17,17 +9,9 @@
       "title": "stay at home dad"
     },
     {
-      "id": "4b2e",
-      "avatar": "https://i.pravatar.cc/70?img=8",
-      "name": "Henry Ford",
-      "phone": "211-211-2222",
-      "email": "Henry@test.com",
-      "title": "Football Player"
-    },
-    {
       "id": "ea59",
       "avatar": "https://i.pravatar.cc/70?img=8",
-      "name": "Henry Ford",
+      "name": "Kelsey Kay",
       "phone": "200-353-5353",
       "email": "Henry@test.com",
       "title": "Baseball"
@@ -57,12 +41,12 @@
       "title": "Retired"
     },
     {
-      "id": "d65c",
-      "avatar": "https://i.pravatar.cc/70?img=10",
-      "name": "Larry Silva",
-      "phone": "123-123-123",
-      "email": "larry@test.come",
-      "title": "Retired"
+      "id": "6",
+      "title": "QA Engineer",
+      "avatar": "https://i.pravatar.cc/70?img=6",
+      "name": "Nic Jones",
+      "phone": "(205)-205-2050",
+      "email": "olivia.wilson@yahoo.com"
     }
   ]
 }

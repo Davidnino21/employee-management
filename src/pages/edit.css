@@ -1,0 +1,24 @@
+.edit-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  min-height: 80vh;
+  align-items: center;
+}
+
+.edit-container form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.edit-form img {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}

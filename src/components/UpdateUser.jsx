@@ -16,7 +16,7 @@ function UpdateUser() {
   useEffect(() => {
     fetch(`http://localhost:3000/employees/${id}`)
       .then((res) => res.json())
-      .then((data) => setTimeout(() => setData(data), 3000));
+      .then((data) => setData(data));
   }, []);
 
   function handleChange(e) {
@@ -27,25 +27,25 @@ function UpdateUser() {
   async function handleSubmit(e) {
     e.preventDefault();
     try {
-      const res = await fetch("http://localhost:3000/employees", {
-        method: "post",
+      const res = await fetch(`http://localhost:3000/employees/${id}`, {
+        method: "put",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(data),
       });
       const json = await res.json();
-      setMessage("User added");
-      setData({ avatar: "", name: "", email: "", phone: "", title: "" });
+      setMessage("User updated");
     } catch (error) {
       console.log(error);
     }
   }
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="">Avatar:</label>
+    <div className="edit-container">
+      <form className="edit-form" onSubmit={handleSubmit}>
+        <label className="avatar" htmlFor="">Avatar:</label>
+        <img src={data.avatar} alt="" />
         <input
           type="url"
           name="avatar"
@@ -60,6 +60,7 @@ function UpdateUser() {
           onChange={handleChange}
           value={data.name}
         />
+
         <label htmlFor="">Phone Number:</label>
         <input
           type="text"
@@ -89,7 +90,7 @@ function UpdateUser() {
         </div>
         <div className="save-btn">
           <button>Save</button>
-          <Link to="/">Go To Users</Link>
+         <Link to="/">Go Home</Link>
         </div>
       </form>
     </div>
