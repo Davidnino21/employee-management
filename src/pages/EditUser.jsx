@@ -1,6 +1,10 @@
+import UpdateUser from "../components/UpdateUser"
+
 function EditUser() {
     return (
-        <h1>Edit User</h1>
+        <div>
+            <UpdateUser />
+        </div>
     )
 }
 

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router";
+import { Link, useParams } from "react-router";
 import { SiMinutemailer } from "react-icons/si";
+import { IoArrowBackCircleOutline } from "react-icons/io5";
 import "./details.css";
 
 function UserDetail() {
@@ -19,6 +20,7 @@ function UserDetail() {
   return (
     <div className="page-container">
       <div className="details-container">
+        <Link to={"/"}><IoArrowBackCircleOutline /></Link>
         <div className="header-details">
           <img src={employee.avatar} alt="" />
           <h2>{employee.name}</h2>

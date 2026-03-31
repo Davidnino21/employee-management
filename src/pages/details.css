@@ -17,6 +17,15 @@
   padding: 20px;
 }
 
+.details-container a {
+  font-size: 28px;
+  color: black;
+}
+
+.details-container a:hover {
+  color: #4e90e1;
+}
+
 .header-details {
   display: flex;
   flex-direction: column;
@@ -41,7 +50,7 @@
 }
 
 .education {
-   width: 50%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -49,4 +58,3 @@
   background-color: #fff;
   padding: 20px;
 }
-
