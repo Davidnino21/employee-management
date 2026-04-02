@@ -1,19 +1,31 @@
-import { CiFilter } from "react-icons/ci";
 import { IoIosPersonAdd } from "react-icons/io";
 import { Link } from "react-router";
+import { useState } from "react";
 
-function Search() {
+function Search({ filterEmployees }) {
+  const [search, setSearch] = useState("");
+
+  function handleChange(e) {
+    setSearch(e.target.value);
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    filterEmployees(search);
+  }
+
   return (
     <div className="search">
-      <form action="">
-        <input type="text" name="" id="" placeholder="search user" />
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          name=""
+          id=""
+          placeholder="search user"
+          onChange={handleChange}
+        />
+        <button>Search</button>
       </form>
-      <div className="btn-actions">
-        <button>
-          <CiFilter />
-          filter
-        </button>
-      </div>
     </div>
   );
 }

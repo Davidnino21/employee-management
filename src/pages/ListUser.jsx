@@ -33,9 +33,16 @@ function ListUser() {
     }
   } 
 
+  function filterEmployees(keyword) {
+    const filtered = employees.filter((emp) => {
+     return emp.name.toLowerCase().includes(keyword.toLowerCase())
+    })
+    setEmployees(filtered)
+  }
+
   return (
     <>
-      <Search />
+      <Search filterEmployees={filterEmployees}/>
       <div className="user-container">
         {employees.map((emp) => (
           <UserCard key={emp.id} employee={emp} toggle={toggleDelete}/>
