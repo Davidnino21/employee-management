@@ -5,13 +5,12 @@ import DeleteModal from "../components/DeleteModal";
 
 function ListUser() {
   const [employees, setEmployees] = useState([]);
-  const [showDelete, setShowDelete] = useState(false)
-  const [selectedUser, setSelectedUser] = useState({})
+  const [showDelete, setShowDelete] = useState(false);
+  const [selectedUser, setSelectedUser] = useState({});
 
   function toggleDelete(user) {
-    
-    setShowDelete(!showDelete)
-    setSelectedUser(user)
+    setShowDelete(!showDelete);
+    setSelectedUser(user);
   }
 
   useEffect(() => {
@@ -22,33 +21,41 @@ function ListUser() {
 
   async function deleteUserById(id) {
     try {
-      const res = fetch(`http://localhost:3000/employees/${id}`,{
-        method: "delete"
-      })
-      const filtered = employees.filter((emp) => emp.id != id)
-      setEmployees(filtered)
-      setShowDelete(false)
-    } catch (error) {
-      
-    }
-  } 
+      const res = fetch(`http://localhost:3000/employees/${id}`, {
+        method: "delete",
+      });
+      const filtered = employees.filter((emp) => emp.id != id);
+      setEmployees(filtered);
+      setShowDelete(false);
+    } catch (error) {}
+  }
 
   function filterEmployees(keyword) {
     const filtered = employees.filter((emp) => {
-     return emp.name.toLowerCase().includes(keyword.toLowerCase())
-    })
-    setEmployees(filtered)
+      return (
+        emp.name.toLowerCase().includes(keyword.toLowerCase()) ||
+        emp.phone.includes(keyword) ||
+        emp.email.toLowerCase().includes(keyword.toLowerCase()) ||
+        emp.title.toLowerCase().includes(keyword.toLowerCase())
+      );
+    });
+    setEmployees(filtered);
   }
 
   return (
     <>
-      <Search filterEmployees={filterEmployees}/>
+      <Search filterEmployees={filterEmployees} />
       <div className="user-container">
         {employees.map((emp) => (
-          <UserCard key={emp.id} employee={emp} toggle={toggleDelete}/>
+          <UserCard key={emp.id} employee={emp} toggle={toggleDelete} />
         ))}
       </div>
-      <DeleteModal show={showDelete} cancel={toggleDelete} selectedUser={selectedUser} deleteEmployee={deleteUserById}/>
+      <DeleteModal
+        show={showDelete}
+        cancel={toggleDelete}
+        selectedUser={selectedUser}
+        deleteEmployee={deleteUserById}
+      />
     </>
   );
 }

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router";
 
+
 function UpdateUser() {
   const [data, setData] = useState({
     avatar: "",
@@ -44,7 +45,9 @@ function UpdateUser() {
   return (
     <div className="edit-container">
       <form className="edit-form" onSubmit={handleSubmit}>
-        <label className="avatar" htmlFor="">Avatar:</label>
+        <label className="avatar" htmlFor="">
+          Avatar:
+        </label>
         <img src={data.avatar} alt="" />
         <input
           type="url"
@@ -88,9 +91,9 @@ function UpdateUser() {
         <div>
           <p>{message}</p>
         </div>
-        <div className="save-btn">
+        <div className="edit-save-btn">
           <button>Save</button>
-         <Link to="/">Go Home</Link>
+          <Link to="/">Go Home</Link>
         </div>
       </form>
     </div>

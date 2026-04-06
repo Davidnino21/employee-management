@@ -14,11 +14,39 @@
   gap: 10px;
   border-radius: 20px;
   background-color: #fff;
-  padding: 20px;
+  padding: 35px;
+}
+
+.edit-form label {
+  font-size: 20px;
+  color: #4b5563;
 }
 
 .edit-form img {
-    border-radius: 50%;
-    width: 70px;
-    height: 70px;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
 }
+
+.edit-form input {
+  border: 1px solid #dbdbdb;
+  width: 70%;
+  padding: 5px;
+}
+
+.edit-save-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.edit-save-btn button {
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #79b2be;
+  cursor: pointer;
+}
+
