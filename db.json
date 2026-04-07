@@ -1,14 +1,6 @@
 {
   "employees": [
     {
-      "id": "e887",
-      "avatar": "https://i.pravatar.cc/70?img=7",
-      "name": "Gilbert Great",
-      "phone": "200-111-2222",
-      "email": "gilbert@test.com",
-      "title": "stay at home dad"
-    },
-    {
       "id": "d41d",
       "avatar": "https://i.pravatar.cc/70?img=8",
       "name": "Henry Ford",

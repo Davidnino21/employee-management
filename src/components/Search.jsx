@@ -2,7 +2,7 @@ import { IoIosPersonAdd } from "react-icons/io";
 import { Link } from "react-router";
 import { useState } from "react";
 
-function Search({ filterEmployees }) {
+function Search({ filterEmployees, getUsers }) {
   const [search, setSearch] = useState("");
 
   function handleChange(e) {
@@ -14,6 +14,11 @@ function Search({ filterEmployees }) {
     filterEmployees(search);
   }
 
+  function clearSearch() {
+    setSearch("");
+    getUsers();
+  }
+
   return (
     <div className="search">
       <form onSubmit={handleSubmit}>
@@ -23,8 +28,12 @@ function Search({ filterEmployees }) {
           id=""
           placeholder="search user"
           onChange={handleChange}
+          value={search}
         />
         <button>Search</button>
+        <button type="button" onClick={clearSearch}>
+          Clear
+        </button>
       </form>
     </div>
   );

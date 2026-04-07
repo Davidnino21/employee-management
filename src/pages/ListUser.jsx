@@ -8,16 +8,23 @@ function ListUser() {
   const [showDelete, setShowDelete] = useState(false);
   const [selectedUser, setSelectedUser] = useState({});
 
+  useEffect(() => {
+    getUsers();
+  }, []);
+
+  async function getUsers() {
+    try {
+      const res = await fetch("http://localhost:3000/employees");
+      const data = await res.json();
+      setEmployees(data);
+      return data;
+    } catch (error) {}
+  }
+
   function toggleDelete(user) {
     setShowDelete(!showDelete);
     setSelectedUser(user);
   }
-
-  useEffect(() => {
-    fetch("http://localhost:3000/employees")
-      .then((res) => res.json())
-      .then((data) => setEmployees(data));
-  }, []);
 
   async function deleteUserById(id) {
     try {
@@ -30,21 +37,24 @@ function ListUser() {
     } catch (error) {}
   }
 
-  function filterEmployees(keyword) {
-    const filtered = employees.filter((emp) => {
-      return (
-        emp.name.toLowerCase().includes(keyword.toLowerCase()) ||
-        emp.phone.includes(keyword) ||
-        emp.email.toLowerCase().includes(keyword.toLowerCase()) ||
-        emp.title.toLowerCase().includes(keyword.toLowerCase())
-      );
-    });
-    setEmployees(filtered);
+  async function filterEmployees(keyword) {
+    try {
+      const data = await getUsers()
+      const filtered = data.filter((emp) => {
+        return (
+          emp.name.toLowerCase().includes(keyword.toLowerCase()) ||
+          emp.phone.includes(keyword) ||
+          emp.email.toLowerCase().includes(keyword.toLowerCase()) ||
+          emp.title.toLowerCase().includes(keyword.toLowerCase())
+        );
+      });
+      setEmployees(filtered);
+    } catch (error) {}
   }
 
   return (
     <>
-      <Search filterEmployees={filterEmployees} />
+      <Search filterEmployees={filterEmployees} getUsers={getUsers}/>
       <div className="user-container">
         {employees.map((emp) => (
           <UserCard key={emp.id} employee={emp} toggle={toggleDelete} />
