@@ -9,6 +9,8 @@ function UpdateUser() {
     phone: "",
     email: "",
     title: "",
+    education:"",
+    skills: "",
   });
 
   const [message, setMessage] = useState("");
@@ -88,12 +90,27 @@ function UpdateUser() {
           onChange={handleChange}
           value={data.title}
         />
+        <label htmlFor="">Education:</label>
+        <input
+          type="text"
+          name="education"
+          id=""
+          onChange={handleChange}
+          value={data.education}
+        />
+        <label htmlFor="">Skills:</label>
+        <input
+          type="text"
+          name="skills"
+          id=""
+          onChange={handleChange}
+          value={data.skills}
+        />
         <div>
           <p>{message}</p>
         </div>
         <div className="edit-save-btn">
           <button>Save</button>
-          <Link to="/">Go Home</Link>
         </div>
       </form>
     </div>

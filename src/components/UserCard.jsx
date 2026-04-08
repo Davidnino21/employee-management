@@ -31,6 +31,8 @@ function UserCard({ employee, toggle }) {
         <p>
           <FaClipboardList /> <span>{employee.title}</span>
         </p>
+        <p>{employee.education}</p>
+        <p>{employee.skills}</p>
       </div>
       <div
         className="user-card-menu"

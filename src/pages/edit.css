@@ -50,3 +50,8 @@
   cursor: pointer;
 }
 
+.edit-save-btn button:hover {
+   background-color: #4e90e1;
+  color: white;
+}
+

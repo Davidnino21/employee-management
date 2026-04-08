@@ -42,7 +42,8 @@ function UserDetail() {
         <div className="education">
           <h3>Education:</h3>
           <p>{employee.education}</p>
-          <p>{employee.note}</p>
+          <h3>Skills:</h3>
+          <p>{employee.skills}</p>
         </div>
     </div>
   );

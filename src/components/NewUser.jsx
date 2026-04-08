@@ -88,7 +88,6 @@ function NewUser() {
         </div>
         <div className="save-btn">
           <button>Save</button>
-          <Link to="/">Go To Users</Link>
         </div>
       </form>
     </div>

@@ -20,10 +20,11 @@
 .details-container a {
   font-size: 28px;
   color: black;
+  
 }
 
 .details-container a:hover {
-  color: #4e90e1;
+  color: #79b2be;;
 }
 
 .header-details {

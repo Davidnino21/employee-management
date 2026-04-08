@@ -6,7 +6,9 @@
       "name": "Henry Ford",
       "phone": "200-353-5353",
       "email": "Henry@test.com",
-      "title": "Baseball"
+      "title": "Baseball",
+      "education": "B.S. in Sports Management",
+      "skills": ["Coaching", "Team Leadership", "Game Strategy"]
     },
     {
       "id": "f244",
@@ -14,7 +16,9 @@
       "name": "Bob Jones",
       "phone": "111-111-1111",
       "email": "bob@test.com",
-      "title": "Volleyball"
+      "title": "Volleyball",
+      "education": "B.A. in Physical Education",
+      "skills": ["Training", "Communication", "Event Coordination"]
     },
     {
       "id": "735c",
@@ -22,7 +26,9 @@
       "name": "Larry Silva",
       "phone": "123-123-123",
       "email": "larry@test.come",
-      "title": "Retired"
+      "title": "Retired",
+      "education": "High School Diploma",
+      "skills": ["Mentoring", "Customer Service"]
     },
     {
       "id": "6",
@@ -30,7 +36,9 @@
       "avatar": "https://i.pravatar.cc/70?img=6",
       "name": "Nic Jones",
       "phone": "(205)-205-2050",
-      "email": "olivia.wilson@yahoo.com"
+      "email": "olivia.wilson@yahoo.com",
+      "education": "B.S. in Computer Science",
+      "skills": ["Automation Testing", "Bug Tracking", "Selenium", "API Testing"]
     }
   ]
 }
